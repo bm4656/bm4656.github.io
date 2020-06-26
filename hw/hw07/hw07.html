@@ -1,0 +1,130 @@
+<!--hw07(contact).html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+</head>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    /*    contact 스타일*/
+    h1{
+        color:lightcoral;
+        margin: 20px 0px;
+    }
+    h2 {
+            color: white;
+            margin: 20px 0px;
+            font-size: 36px;
+        }
+    
+    table, tr, th, td {
+            border: solid 2px lightsalmon;
+            border-collapse: collapse;
+            padding: 18px;
+            font-weight: bold;
+            color:indianred;
+            background-color: bisque;
+            text-align: center;
+        }
+        #tbl_contact input[type='submit'] {
+            padding: 12px 17px;
+            color: #fff;
+            background: lightsalmon;
+            border: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            display: inline-block;
+            width: 70px;            
+        }
+        #tbl_contact input[type='submit']:hover {
+            background: salmon;
+            cursor: pointer;
+        }
+        #txt_center {
+            font-size: 37px;
+            text-align: center;
+            background-color: lightsalmon;
+            margin: 20px 0;
+        }
+</style>
+<body>
+<div id="wrapper">
+<!--   메뉴시작-->
+    <div id="button">
+       <a href="./index.html"><img src="../img/logo.jpg" alt="로고" width="100" ></a>
+       <p>YA 김보민</p>
+   </div>
+    <div id="nav">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../hw02/hello-css03.html">HW02</a></li>
+            <li><a href="../hw03/hw03.html">HW03</a></li>
+            <li><a href="../hw04/hw04.html">HW04</a></li>
+            <li><a href="./hw07.html">Contact</a></li>
+        </ul>
+    </div>
+<!--    메뉴 끝-->
+   <div class="content">
+       <div class="contA">
+           <h1>메세지를 보내주세요.</h1>
+           <p>저에게 하고 싶은 말이 있다면 적어주세요.</p>
+       </div>
+<!--       본문 시작 (contant)-->
+  <div class="contB">
+      <h2 id="txt_center">메세지 보내기</h2>
+      <div id="tbl_contact">
+          <form id="form_contact">
+            <table border="2">
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="writer" size="60"></td>
+                 <td> <img src="./img/lock.png" width="30" alt=""> </td>
+              <td> <input type="radio" name="protect"> 공개 
+                   <input type="radio" name="protect" checked> 비공개</td>
+            </tr>
+             <tr>
+              <td> 이메일 </td>
+              <td> <input type="text" name="email" size="44"> @
+              <select>
+               <option> naver.com </option>
+               <option> daum.net </option>
+               <option> gmail.com </option>
+               <option> 직접입력 </option>
+              </select> </td>
+              <td> 전화번호 </td>
+              <td> <input type="phonenumber" name="pn"> </td>
+             </tr>
+             <tr>
+              <td> 제목 </td>
+              <td colspan="4"> <input type="text" size="105"> </td>
+             </tr>
+             <tr>
+              <td>메세지</td>
+              <td colspan="4"> <textarea cols="100" rows="18"></textarea> </td>
+              </tr>
+          </table>
+           <div id="tbl_submit">
+              <input type="submit" value="전송">
+          </div>     
+          </form>    
+        </div>
+      </div>
+  <!-- content -->
+   <!--    footer 시작-->
+    <div>
+        <div id="footer_copyright">
+            <p>
+                Copyright &copy <a href="./index.html" class="site">bmkim</a> All rights reserved. 
+            </p>
+            <span>EMAIL : kje4656@naver.com</span>
+        </div>
+    </div>
+<!-- footer 끝-->
+  </div> 
+<!--  wrapper-->
+    </div>   
+</body>
+</html>
